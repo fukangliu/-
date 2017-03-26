@@ -1,0 +1,73 @@
+/*样式重置：css reset*/
+
+body,h1,h2,h3,h4,p,dl,dd,ul,ol,form,input,textarea,th,td,select{margin:0;padding:0;}
+em{font-style: normal;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none;vertical-align:top;}
+table{border-collapse:collapse;}
+input,textarea{outline:none;}
+textarea{resize:none;overflow: auto;}
+body{font-size: 12px;font-family:"微软雅黑";}
+
+/*重用样式：public css*/
+
+.fl{float:left;}
+.fr{float:right;}
+.clearfix{zoom:1;}
+.clearfix:after{content:'';display:block;clear:both;}
+.auto{margin: 0 auto;}
+
+/*模块化样式：module css*/
+
+
+
+
+
+/*个性化样式：personality css*/
+
+html,body,ul,li,p,div{
+	box-sizing:border-box;
+}
+.wrap{
+	width: 900px;
+}
+#pic-ct{
+	position: relative;
+}
+#pic-ct .item{
+	width: 280px;
+	padding: 0 0 10px 0;
+	margin: 10px;
+	border: 1px solid #dfdfdf;
+	background:#fff;
+	opacity: 0;
+	position: absolute;
+	transition:all 0.8s;
+}
+
+#pic-ct .item img{
+	width: 260px;
+	margin: 10px;
+}
+
+#pic-ct .item .header{
+	height: 25px;
+	margin: 0 12px;
+	border-bottom: 1px solid #dbdbdb;
+}
+#pic-ct .desp{
+	font-size: 12px;
+	line-height: 18px;
+	margin: 10px 15px 0;
+	color: #777371;
+}
+#load{
+	visibility: hidden;
+	height: 20px;
+}
+#pic-ct .hide{
+	display: none;
+}
+
+
